@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
 import Experience from "../components/Experience.astro";
 import Projects from "../components/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import SocialPill from "../components/SocialPill.astro";
 import LinkedIn from "../components/icons/LinkedIn.astro";
@@ -10,6 +11,7 @@ import GitHub from "../components/icons/GitHub.astro";
 import MailIcon from "../components/icons/MailIcon.astro";
 import BriefCase from "../components/icons/BriefCase.astro";
 import Code from "../components/icons/Code.astro";
+import ProfileCheck from "../components/icons/ProfileCheck.astro";
 ---
 
 <Layout
@@ -75,6 +77,14 @@ import Code from "../components/icons/Code.astro";
         Proyectos
       </h2>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <ProfileCheck class="size-7" />
+        Sobre mí
+      </h2>
+      <AboutMe />
     </SectionContainer>
   </main>
 </Layout>
