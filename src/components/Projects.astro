@@ -1,10 +1,19 @@
 ---
+import LinkButton from "./LinkButton.astro";
+import GitHub from "./icons/GitHub.astro";
+import WebPage from "./icons/WebPage.astro";
 import NextJs from "./icons/NextJs.astro";
+import MongoDB from "./icons/MongoDB.astro";
 const TAGS = {
   NEXT: {
     name: "Next.Js",
     class: "bg-black text-white",
     icon: NextJs,
+  },
+  MONGODB: {
+    name: "MongoDB",
+    class: "bg-black text-white",
+    icon: MongoDB,
   },
 };
 
@@ -16,31 +25,47 @@ const PROJECTS = [
     link: "https://blog-app-production-299b.up.railway.app/",
     github: "https://github.com/jhosbel/blog-app",
     image: "/projects/blog_web_image.webp",
-    tags: [TAGS.NEXT],
+    tags: [TAGS.NEXT, TAGS.MONGODB],
   },
 ];
 ---
 
-{
-  PROJECTS.map(({ title, description, tags, image }) => (
-    <article>
-      <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
-      <p class="text-lg mb-4 text-pretty">{description}</p>
-      <ul class="flex gap-x-2 flex-row mb-2">
-        {tags.map((tag) => (
-          <li>
-            <span class={`flex gap-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
-              <tag.icon class="size-4" />
-              {tag.name}
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        class="rounded shadow-2xl shadow-white/10"
-        src={image}
-        alt={`Captura de pantalla del proyecto ${title}`}
-      />
-    </article>
-  ))
-}
+<section class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ title, description, tags, image, link, github }) => (
+      <article>
+        <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+        <p class="text-lg mb-4 text-pretty">{description}</p>
+        <ul class="flex gap-x-2 flex-row mb-2">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex gap-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <img
+          class="rounded shadow-2xl shadow-white/10"
+          src={image}
+          alt={`Captura de pantalla del proyecto ${title}`}
+        />
+        <footer class="flex gap-x-4 justify-start mt-4">
+          {github && (
+            <LinkButton href={github}>
+              <GitHub class="size-6" />
+              ver codigo fuente
+            </LinkButton>
+          )}
+          <LinkButton href={link}>
+            <WebPage />
+            Ir al sitio web
+          </LinkButton>
+        </footer>
+      </article>
+    ))
+  }
+</section>
