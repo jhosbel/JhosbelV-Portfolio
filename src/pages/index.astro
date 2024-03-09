@@ -4,6 +4,7 @@ import Badge from "../components/Badge.astro";
 import Experience from "../components/Experience.astro";
 import Projects from "../components/Projects.astro";
 import AboutMe from "../components/AboutMe.astro";
+import Contact from "../components/Contact.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import SocialPill from "../components/SocialPill.astro";
 import LinkedIn from "../components/icons/LinkedIn.astro";
@@ -85,6 +86,14 @@ import ProfileCheck from "../components/icons/ProfileCheck.astro";
         Sobre mí
       </h2>
       <AboutMe />
+    </SectionContainer>
+
+    <SectionContainer id="contacto">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <MailIcon class="size-7" />
+        Contacto
+      </h2>
+      <Contact />
     </SectionContainer>
   </main>
 </Layout>
