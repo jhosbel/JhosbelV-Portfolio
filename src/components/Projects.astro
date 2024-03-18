@@ -7,6 +7,7 @@ import MongoDB from "./icons/MongoDB.astro";
 import JavaScript from "./icons/JavaScript.astro"
 import Html from "./icons/Html.astro"
 import Css from "./icons/Css.astro"
+import React from "./icons/React.astro"
 
 const TAGS = {
   NEXT: {
@@ -34,6 +35,11 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Css,
   },
+  REACT: {
+    name: "React",
+    class: "bg-black text-white",
+    icon: React,
+  },
 };
 
 const PROJECTS = [
@@ -44,7 +50,7 @@ const PROJECTS = [
     link: "https://blog-app-production-299b.up.railway.app/",
     github: "https://github.com/jhosbel/blog-app",
     image: "/projects/blog_web_image.webp",
-    tags: [TAGS.NEXT, TAGS.MONGODB],
+    tags: [TAGS.REACT, TAGS.NEXT, TAGS.MONGODB],
   },
   {
     title: "Web sobre Neon Genesis Evangelion",
@@ -54,6 +60,15 @@ const PROJECTS = [
     github: "https://github.com/jhosbel/Evangelion-App",
     image: "/projects/eva_portada.webp",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+  },
+  {
+    title: "Rick And Morthy Web",
+    description:
+      "Pagina web sobre la serie famosa Rick and Morthy donde se muestra la información sobre los personajes de la serie consumiendo la api publica de Rick and Morthy.",
+    link: "https://rick-and-morthy-api.vercel.app",
+    github: "https://github.com/jhosbel/rick-and-morthy-api",
+    image: "/projects/ram_portada.webp",
+    tags: [TAGS.REACT, TAGS.NEXT],
   },
 ];
 ---
