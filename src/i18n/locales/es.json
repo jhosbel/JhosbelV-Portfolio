@@ -44,5 +44,10 @@
   },
   "footer": {
     "text_footer_1": " Ningun derecho reservado."
+  },
+  "buttons": {
+    "button_know_more": "Saber más...",
+    "button_see_code": "Ver codigo fuente",
+    "button_go_web": "Ir al sitio web"
   }
 }

@@ -44,5 +44,10 @@
   },
   "footer": {
     "text_footer_1": " No rights reserved."
+  },
+  "buttons": {
+    "button_know_more": "Know more...",
+    "button_see_code": "View source code",
+    "button_go_web": "Go to website"
   }
 }
