@@ -4,10 +4,14 @@ import GitHub from "./icons/GitHub.astro";
 import WebPage from "./icons/WebPage.astro";
 import NextJs from "./icons/NextJs.astro";
 import MongoDB from "./icons/MongoDB.astro";
-import JavaScript from "./icons/JavaScript.astro"
-import Html from "./icons/Html.astro"
-import Css from "./icons/Css.astro"
-import React from "./icons/React.astro"
+import JavaScript from "./icons/JavaScript.astro";
+import Html from "./icons/Html.astro";
+import Css from "./icons/Css.astro";
+import React from "./icons/React.astro";
+import { getI18n } from "../i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 
 const TAGS = {
   NEXT: {
@@ -44,27 +48,24 @@ const TAGS = {
 
 const PROJECTS = [
   {
-    title: "Blog General",
-    description:
-      "Es una pagina web donde puedes leer y escribir blogs de informacion general, sobre la comunidad o cualquier tema que te interece.",
+    title: i18n.projects.title_project_1,
+    description: i18n.projects.description_project_1,
     link: "https://blog-app-kappa-two.vercel.app/",
     github: "https://github.com/jhosbel/blog-app",
     image: "/projects/blog_web_image.webp",
     tags: [TAGS.REACT, TAGS.NEXT, TAGS.MONGODB],
   },
   {
-    title: "Web sobre Neon Genesis Evangelion",
-    description:
-      "Una web simple donde muestro información sobre el manga de Neon Genesis Evangelion como historia, personajes, etc. Como también Wallpaper y los primeros 4 capítulos del manga.",
+    title: i18n.projects.title_project_2,
+    description: i18n.projects.description_project_2,
     link: "https://evangelion-web.netlify.app/",
     github: "https://github.com/jhosbel/Evangelion-App",
     image: "/projects/eva_portada.webp",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
-    title: "Rick And Morthy Web",
-    description:
-      "Pagina web sobre la serie famosa Rick and Morthy donde se muestra la información sobre los personajes de la serie consumiendo la api publica de Rick and Morthy.",
+    title: i18n.projects.title_project_3,
+    description: i18n.projects.description_project_3,
     link: "https://rick-and-morthy-api.vercel.app",
     github: "https://github.com/jhosbel/rick-and-morthy-api",
     image: "/projects/ram_portada.webp",

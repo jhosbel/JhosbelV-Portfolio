@@ -3,7 +3,10 @@ import LinkButton from "./LinkButton.astro";
 import WhatsApp from "./icons/WhatsApp.astro";
 import Gmail from "./icons/Gmail.astro";
 import LinkedIn from "./icons/LinkedIn.astro";
+import { getI18n } from "../i18n";
 
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 const whatsAppMsj = "https://wa.me/573193997183";
 
 export let formData = {
@@ -33,21 +36,19 @@ async function handleSubmit(event: any) {
 >
   <div class="max-w-lg flex flex-col gap-y-8">
     <p>
-      Actualmente estoy abierto a nuevos proyectos y oportunidades de
-      colaboración. Si tiene alguna empresa interesante o posible colaboración
-      en mente, no dude en comunicarse con nosotros.
+      {i18n.contact.paragraph_contact_1}
     </p>
     <form
       action="https://formsubmit.co/jhosbel.vargas@gmail.com"
       method="post"
       class="flex flex-col gap-y-4 w-full"
     >
-      <label>Tu Nombre</label>
+      <label>{i18n.contact.title_contact_label_1}</label>
       <input
         name="Titulo"
         type="text"
         id="small-input"
-        placeholder="Ingrese su nombre"
+        placeholder={i18n.contact.placeholder_contact_label_1}
         class={`
             block 
             w-full 
@@ -63,11 +64,11 @@ async function handleSubmit(event: any) {
             text-white 
             `}
       />
-      <label>Tu Correo</label>
+      <label>{i18n.contact.title_contact_label_2}</label>
       <input
         name="correo"
         type="text"
-        placeholder="Ingrese su correo electrionico"
+        placeholder={i18n.contact.placeholder_contact_label_2}
         class={`block 
         w-full 
         p-2 
@@ -81,11 +82,11 @@ async function handleSubmit(event: any) {
         placeholder-gray-400
         text-white`}
       />
-      <label>Tu Mensaje</label>
+      <label>{i18n.contact.title_contact_label_3}</label>
       <textarea
         name="mensaje"
         rows="10"
-        placeholder="Ingrese su mensaje aquí"
+        placeholder={i18n.contact.placeholder_contact_label_3}
         class={`w-full 
         p-2 
         border
@@ -97,7 +98,7 @@ async function handleSubmit(event: any) {
         border-gray-800 
         placeholder-gray-400
         text-white`}></textarea>
-      <LinkButton type="submit">Enviar</LinkButton>
+      <LinkButton type="submit">{i18n.contact.send_contact}</LinkButton>
       <input type="hidden" name="_next" value="http://localhost:4321/" />
       <input type="hidden" name="_captcha" value="false" />
     </form>
@@ -109,7 +110,7 @@ async function handleSubmit(event: any) {
     </LinkButton>
     <LinkButton href="mailto:elcorreoquequieres@correo.com" target="_blank">
       <Gmail class="size-6" />
-      Correo
+      {i18n.contact.email_contact}
     </LinkButton>
     <LinkButton
       href="https://www.linkedin.com/in/jhosbel-vargas"

@@ -1,0 +1,99 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Badge from "../../components/Badge.astro";
+import Experience from "../../components/Experience.astro";
+import Projects from "../../components/Projects.astro";
+import AboutMe from "../../components/AboutMe.astro";
+import Contact from "../../components/Contact.astro";
+import SectionContainer from "../../components/SectionContainer.astro";
+import SocialPill from "../../components/SocialPill.astro";
+import LinkedIn from "../../components/icons/LinkedIn.astro";
+import GitHub from "../../components/icons/GitHub.astro";
+import MailIcon from "../../components/icons/MailIcon.astro";
+import BriefCase from "../../components/icons/BriefCase.astro";
+import Code from "../../components/icons/Code.astro";
+import ProfileCheck from "../../components/icons/ProfileCheck.astro";
+---
+
+<Layout
+  title="Jhosbel Portfolio - Web Developer and Programmer with 4 years of experience"
+  description="Hire Jhosbel to create your web application. Web developer specialized in creating unique applications"
+>
+  <main class="px-4">
+    <SectionContainer class="py-12 md:py-44 pb-32">
+      <img
+        src="foto_personal.jpg"
+        alt="jhosbel foto"
+        class="rounded-full size-12 mb-4"
+      />
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-3 pb-6 lg:pb-10"
+      >
+        Hey, I'm Jhosbel<a
+          href="https://www.linkedin.com/in/jhosbel-vargas"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center hover:scale-105 transition"
+          ><Badge>Available to work</Badge></a
+        >
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+        <span>+4 years of experience.</span><span class="text-yellow-200/90">
+          Web developer.</span
+        ><span class="text-red-200/90">
+          From Caracas, Venezuela and currently living in Colombia.</span
+        >
+        <span class="opacity-75">
+          Specialized in creating unique applications.</span
+        >
+      </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/jhosbel-vargas">
+          <LinkedIn class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/jhosbel">
+          <GitHub class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:jhosbel.vargas@gmail.com">
+          <MailIcon class="size-4 md:size-6" />
+          jhosbel.vargas@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <BriefCase class="size-7" />
+        Work experience
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Code class="size-7" />
+        Projects
+      </h2>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <ProfileCheck class="size-7" />
+        About me
+      </h2>
+      <AboutMe />
+    </SectionContainer>
+
+    <SectionContainer id="contacto">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <MailIcon class="size-7" />
+        Contact
+      </h2>
+      <Contact />
+    </SectionContainer>
+  </main>
+</Layout>

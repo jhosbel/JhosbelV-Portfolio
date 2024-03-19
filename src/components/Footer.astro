@@ -1,4 +1,8 @@
 ---
+import { getI18n } from "../i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 const currentYear = new Date().getFullYear()
 ---
 
@@ -9,7 +13,7 @@ const currentYear = new Date().getFullYear()
     <span class="text-sm sm:text-center text-yellow-200/90"
       >© {currentYear} <a href="https://www.linkedin.com/in/jhosbel-vargas" class="hover:underline"
         >Jhosbel</a
-      >. Ningun derecho reservado.
+      >.{i18n.footer.text_footer_1}
     </span>
   </div>
 </footer>

@@ -1,0 +1,48 @@
+{
+  "experiences": {
+    "date_1": "Nov 2023 - Jan 2024",
+    "company_1": "GROOVY Company, inc.",
+    "title_experience_1": "Full-Stack Developer • OTCMarket",
+    "description_experience_1": "Responsible for the platform, OTCMarket is a web application designed so that users can summarize large blocks of text using the OpenAI API and publish them on different social networks without having to enter them to publish them, using Next.js to make the Frontend and NestJS to make the Backend using Tailwind to style it.",
+    "date_2": "Nov 2023 - Jan 2024",
+    "company_2": "GROOVY Company, inc.",
+    "title_experience_2": "Front-End Developer • GROOVY Company, inc.",
+    "description_experience_2": "As part of the team in charge of the platform, components and utilities for the development of the web application. Integration with Cosmos SDK technology.",
+    "date_3": "Nov 2022 - Jan 2024",
+    "company_3": "GROOVY Company, inc.",
+    "title_experience_3": "Front-End Developer • CHIMBA Blockchain",
+    "description_experience_3": "Be part of the development team of the CHIMBA Blockchain project. The CHIMBA Blockchain project is designed using the Cosmos SDK. Website designed in Angular, showing the user's information about the project, as well as the links to register and download the app and web extension3, stylized using CSS guided by the design. Chimba Explorer designed in React, styled using Chakra UI, the explorer allows users to see their transactions and the number of blocks in the chain. Amazonia designed in React, using the Cosmos SDK to connect via web3, allows you to perform transactions such as sending tokens, creating and voting on proposals, performing tasks, etc. It was styled using Bootstrap.",
+    "date_4": "Nov 2022 - Jan 2023",
+    "company_4": "GROOVY Company, inc.",
+    "title_experience_4": "Front-End Developer • Santo Blockchain Labs, Corp.",
+    "description_experience_4": "I was part of the development team of the main website, the page was created entirely in Angular, it allows users to see more about the company, its mission and objectives."
+  },
+  "projects": {
+    "title_project_1": "General Blog",
+    "description_project_1": "It is a website where you can read and write blogs of general information, about the community or any topic that interests you.",
+    "title_project_2": "Website about Neon Genesis Evangelion",
+    "description_project_2": "A simple website where I show information about the Neon Genesis Evangelion manga such as story, characters, etc. As well as Wallpaper and the first 4 chapters of the manga.",
+    "title_project_3": "Rick And Morthy Web",
+    "description_project_3": "Website about the famous series Rick and Morthy where information about the characters of the series is shown consuming the Rick and Morthy public api."
+  },
+  "about_me": {
+    "paragraph_about_1": "My name is Jhosbel Vargas. I started programming thanks to the recommendation of a friend many years ago and since then I have been involved in the world of development learning more about new technologies.",
+    "paragraph_about_2": "My greatest achievement so far has been being the ",
+    "paragraph_about_3": "in charge of developing a project completely from scratch for the company I have worked for",
+    "paragraph_about_4": "after demonstrating my skills acquired over time. I am proud of the work I did and although it could not be completed with the application due to external agents, I can say that it was a very enriching experience."
+  },
+  "contact": {
+    "paragraph_contact_1": "I am currently open to new projects and collaboration opportunities. If you have any interesting ventures or potential collaborations in mind, please feel free to contact us.",
+    "title_contact_label_1": "Your name",
+    "placeholder_contact_label_1": "Enter your name",
+    "title_contact_label_2": "Your email",
+    "placeholder_contact_label_2": "Enter your email",
+    "title_contact_label_3": "Your message",
+    "placeholder_contact_label_3": "Enter your message here",
+    "send_contact": "Send",
+    "email_contact": "Mail"
+  },
+  "footer": {
+    "text_footer_1": " No rights reserved."
+  }
+}

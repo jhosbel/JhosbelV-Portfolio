@@ -1,0 +1,31 @@
+---
+import { languages } from "../i18n/ui";
+import { useTranslatedPath, getLangFromUrl } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+---
+
+<ul class="flex gap-1 md:gap-3">
+  {
+    Object.entries(languages).map(([lang, label]) => (
+      <li>
+        <a href={translatePath("/", lang)}>
+          {
+            <div class="rounded-full overflow-hidden flex items-center justify-center h-5 w-5">
+              <img
+                class="w-full h-full object-cover"
+                src={
+                  lang === "en"
+                    ? "https://flagsapi.com/US/flat/64.png"
+                    : "https://flagsapi.com/ES/flat/64.png"
+                }
+                alt={`Bandera de ${label}`}
+              />
+            </div>
+          }
+        </a>
+      </li>
+    ))
+  }
+</ul>

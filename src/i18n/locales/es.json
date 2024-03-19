@@ -1,0 +1,48 @@
+{
+  "experiences": {
+    "date_1": "Nov 2023 - Ene 2024",
+    "company_1": "GROOVY Company, inc.",
+    "title_experience_1": "Desarrollador Full-Stack • OTCMarket",
+    "description_experience_1": "Responsable de la plataforma, OTCMarket es una aplicación web diseñada para que los usuarios puedan resumir grandes bloques de texto usando la API de OpenAI y publicarlas en distintas redes sociales sin necesidad de entrar en las mismas para publicarlas, usando Next.js para hacer el Frontend y NestJS para hacer el Backend usando Tailwind para estilizarla.",
+    "date_2": "Nov 2023 - Ene 2024",
+    "company_2": "GROOVY Company, inc.",
+    "title_experience_2": "Desarrollador Front-End • GROOVY Company, inc.",
+    "description_experience_2": "Como parte del equipo encargado de la plataforma, componentes y utilidades para el desarrollo de la aplicación web. Integración con la tencnologia de Cosmos SDK.",
+    "date_3": "Nov 2022 - Ene 2024",
+    "company_3": "GROOVY Company, inc.",
+    "title_experience_3": "Desarrollador Front-End • CHIMBA Blockchain",
+    "description_experience_3": "Forme parte del equipo de desarollo del proyecto CHIMBA Blockchain, El proyecto de CHIMBA Blockchain está diseñada usando el Cosmos SDK. Website diseñado en Angular, mostrando la información del usuario sobre el proyecto, como también los enlaces para poder registrarse y descargar la app y extensión de la web3, estilizada usando CSS guiado por el diseño. Chimba Explorer diseñado en React, estilizada usando Chakra UI, el explorador sirve para que los usuarios puedan ver sus transacciones y el número de bloques de la cadena. Amazonia diseñado en React, usando el SDK de Cosmos para conectándose a través de la web3, te permite realizar transacciones como enviar tokens, crear y votar propuestas, realizar tareas, etc. fue estilizada usando Bootstrap.",
+    "date_4": "Nov 2022 - Ene 2023",
+    "company_4": "GROOVY Company, inc.",
+    "title_experience_4": "Desarrollador Front-End • Santo Blockchain Labs, Corp.",
+    "description_experience_4": "Fui parte del equipo de desarrollo de la página web principal, la página fue creada totalmente en Angular, permite ver a los usuarios más sobre la empresa, su misión y objetivos."
+  },
+  "projects": {
+    "title_project_1": "Blog General",
+    "description_project_1": "Es una pagina web donde puedes leer y escribir blogs de informacion general, sobre la comunidad o cualquier tema que te interece.",
+    "title_project_2": "Web sobre Neon Genesis Evangelion",
+    "description_project_2": "Una web simple donde muestro información sobre el manga de Neon Genesis Evangelion como historia, personajes, etc. Como también Wallpaper y los primeros 4 capítulos del manga.",
+    "title_project_3": "Rick And Morthy Web",
+    "description_project_3": "Pagina web sobre la serie famosa Rick and Morthy donde se muestra la información sobre los personajes de la serie consumiendo la api publica de Rick and Morthy."
+  },
+  "about_me": {
+    "paragraph_about_1": "Me llamo Jhosbel Vargas. Empecé la programación gracias a la recomendación de un amigo hace ya muchos años y desde entonces he estado involucrado en el mundo del desarrollo aprendiendo más sobre las nuevas tecnologías.",
+    "paragraph_about_2": "Mi mayor logro hasta ahora ha sido ser el ",
+    "paragraph_about_3": "encargado de desarrollar un proyecto completamente desde 0 para la empresa en la que he trabajado",
+    "paragraph_about_4": "luego de demostrar mis habilidades adquiridas a lo largo del tiempo. Estoy orgulloso del trabajo que realice y aunque no se pudo completar con la aplicación debido a agentes externos, puedo decir que fue una experiencia bastante enriquecedora."
+  },
+  "contact": {
+    "paragraph_contact_1": "Actualmente estoy abierto a nuevos proyectos y oportunidades de colaboración. Si tiene alguna empresa interesante o posible colaboración en mente, no dude en comunicarse con nosotros.",
+    "title_contact_label_1": "Tu Nombre",
+    "placeholder_contact_label_1": "Ingrese su nombre",
+    "title_contact_label_2": "Tu Correo",
+    "placeholder_contact_label_2": "Ingrese su correo electrionico",
+    "title_contact_label_3": "Tu Mensaje",
+    "placeholder_contact_label_3": "Ingrese su mensaje aquí",
+    "send_contact": "Enviar",
+    "email_contact": "Correo"
+  },
+  "footer": {
+    "text_footer_1": " Ningun derecho reservado."
+  }
+}
