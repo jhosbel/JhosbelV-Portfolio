@@ -6,26 +6,129 @@ const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<ul class="flex gap-1 md:gap-3">
-  {
-    Object.entries(languages).map(([lang, label]) => (
-      <li>
-        <a href={translatePath("/", lang)}>
-          {
-            <div class="rounded-full overflow-hidden flex items-center justify-center h-5 w-5">
-              <img
-                class="w-full h-full object-cover"
-                src={
-                  lang === "en"
-                    ? "https://flagsapi.com/US/flat/64.png"
-                    : "https://flagsapi.com/VE/flat/64.png"
-                }
-                alt={`Bandera de ${label}`}
-              />
-            </div>
-          }
-        </a>
-      </li>
-    ))
-  }
+<ul class="flex gap-1 md:gap-3 sm:hidden">
+  <li>
+    <a href={translatePath("/", "es")}>
+      <div
+        class="rounded-full overflow-hidden flex items-center justify-center h-5 w-5"
+      >
+        <img
+          class="w-full h-full object-cover"
+          src="https://flagsapi.com/VE/flat/64.png"
+          alt="Bandera de Venezuela"
+        />
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href={translatePath("/", "en")}>
+      <div
+        class="rounded-full overflow-hidden flex items-center justify-center h-5 w-5"
+      >
+        <img
+          class="w-full h-full object-cover"
+          src="https://flagsapi.com/US/flat/64.png"
+          alt="Bandera de Estados Unidos"
+        />
+      </div>
+    </a>
+  </li>
 </ul>
+
+<div class="lang-menu hidden sm:block">
+  <div class="selected-lang">
+    {
+      lang === "es" ? (
+        <img
+          src="https://flagsapi.com/VE/flat/64.png"
+          alt="Bandera de Venezuela"
+        />
+      ) : (
+        <img
+          src="https://flagsapi.com/US/flat/64.png"
+          alt="Bandera de Estados Unidos"
+        />
+      )
+    }
+    <ul>
+      <li>
+        <a href={translatePath("/", "en")} class="en">EN</a>
+      </li>
+      <li>
+        <a href={translatePath("/", "es")} class="es">ES</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .lang-menu {
+    color: #fff;
+    position: relative;
+  }
+
+  .lang-menu:hover ul {
+    display: block;
+  }
+
+  .lang-menu ul {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+
+  .lang-menu ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lang-menu ul li a {
+    width: 85px;
+    display: block;
+    padding: 5px 10px;
+  }
+
+  .lang-menu ul li a:before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .lang-menu ul li a:hover {
+    background-color: #3d3d3d;
+    color: #fff;
+  }
+
+  .selected-lang {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    width: 2rem;
+  }
+  .selected-lang:before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://flagsapi.com/US/flat/32.png);
+  }
+
+  .en:before {
+    background-image: url(https://flagsapi.com/US/flat/32.png);
+  }
+
+  .es:before {
+    background-image: url(https://flagsapi.com/VE/flat/32.png);
+  }
+</style>
