@@ -3,10 +3,12 @@ import LinkButton from "./LinkButton.astro";
 import GitHub from "./icons/GitHub.astro";
 import WebPage from "./icons/WebPage.astro";
 import NextJs from "./icons/NextJs.astro";
+import NestJs from "./icons/NestJs.astro";
 import MongoDB from "./icons/MongoDB.astro";
 import JavaScript from "./icons/JavaScript.astro";
 import Html from "./icons/Html.astro";
 import Css from "./icons/Css.astro";
+import Tailwind from "./icons/Tailwind.astro";
 import React from "./icons/React.astro";
 import { getI18n } from "../i18n";
 
@@ -18,6 +20,11 @@ const TAGS = {
     name: "Next.Js",
     class: "bg-black text-white",
     icon: NextJs,
+  },
+  NEST: {
+    name: "Nest.Js",
+    class: "bg-black text-white",
+    icon: NestJs,
   },
   MONGODB: {
     name: "MongoDB",
@@ -39,6 +46,11 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Css,
   },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-black text-white",
+    icon: Tailwind,
+  },
   REACT: {
     name: "React",
     class: "bg-black text-white",
@@ -47,6 +59,14 @@ const TAGS = {
 };
 
 const PROJECTS = [
+  {
+    title: i18n.projects.title_project_4,
+    description: i18n.projects.description_project_4,
+    link: "https://fitness-web-app-lemon.vercel.app/",
+    github: "https://github.com/jhosbel/FitnessWebApp",
+    image: "/projects/c-fitness-portada.webp",
+    tags: [TAGS.NEXT, TAGS.NEST, TAGS.MONGODB, TAGS.TAILWIND],
+  },
   {
     title: i18n.projects.title_project_1,
     description: i18n.projects.description_project_1,

@@ -23,7 +23,9 @@
     "title_project_2": "Web sobre Neon Genesis Evangelion",
     "description_project_2": "Una web simple donde muestro información sobre el manga de Neon Genesis Evangelion como historia, personajes, etc. Como también Wallpaper y los primeros 4 capítulos del manga.",
     "title_project_3": "Rick And Morthy Web",
-    "description_project_3": "Pagina web sobre la serie famosa Rick and Morthy donde se muestra la información sobre los personajes de la serie consumiendo la api publica de Rick and Morthy."
+    "description_project_3": "Pagina web sobre la serie famosa Rick and Morthy donde se muestra la información sobre los personajes de la serie consumiendo la api publica de Rick and Morthy.",
+    "title_project_4": "C-Fitness",
+    "description_project_4": "C-Fitness es una aplicación donde los usuarios pueden crear listas de entrenamientos personalizados, buscando los ejercicios por sus tipos de músculos y agregándolos a su lista personalizada para luego poder agregarla a un calendario de manera que puedan seguir una rutina diaria o planificar en la semana la rutina que al usuario mejor le convenga."
   },
   "about_me": {
     "paragraph_about_1": "Me llamo Jhosbel Vargas. Empecé la programación gracias a la recomendación de un amigo hace ya muchos años y desde entonces he estado involucrado en el mundo del desarrollo aprendiendo más sobre las nuevas tecnologías.",
