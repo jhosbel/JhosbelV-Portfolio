@@ -10,6 +10,7 @@ import Html from "./icons/Html.astro";
 import Css from "./icons/Css.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import React from "./icons/React.astro";
+import TypeScript from "./icons/TypeScript.astro";
 import { getI18n } from "../i18n";
 
 const { currentLocale } = Astro;
@@ -56,6 +57,11 @@ const TAGS = {
     class: "bg-black text-white",
     icon: React,
   },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-black text-white",
+    icon: TypeScript,
+  },
 };
 
 const PROJECTS = [
@@ -65,7 +71,7 @@ const PROJECTS = [
     link: "https://fitness-web-app-lemon.vercel.app/",
     github: "https://github.com/jhosbel/FitnessWebApp",
     image: "/projects/c-fitness-portada.webp",
-    tags: [TAGS.NEXT, TAGS.NEST, TAGS.MONGODB, TAGS.TAILWIND],
+    tags: [TAGS.TYPESCRIPT, TAGS.NEXT, TAGS.NEST, TAGS.MONGODB, TAGS.TAILWIND],
   },
   {
     title: i18n.projects.title_project_1,
