@@ -15,7 +15,11 @@
     "date_4": "Nov 2022 - Ene 2023",
     "company_4": "GROOVY Company, inc.",
     "title_experience_4": "Desarrollador Front-End • Santo Blockchain Labs, Corp.",
-    "description_experience_4": "Fui parte del equipo de desarrollo de la página web principal, la página fue creada totalmente en Angular, permite ver a los usuarios más sobre la empresa, su misión y objetivos."
+    "description_experience_4": "Fui parte del equipo de desarrollo de la página web principal, la página fue creada totalmente en Angular, permite ver a los usuarios más sobre la empresa, su misión y objetivos.",
+    "date_5": "Mar 2024 - Nov 2024",
+    "company_5": "Home Sweet Home, inc.",
+    "title_experience_5": "Desarrollador Mobile • Urban App.",
+    "description_experience_5": "Urban es una aplicación móvil construida en React Native con Expo, diseñada para conectar usuarios que necesitan transporte con conductores que ofrecen servicios de taxi. La app permite a los usuarios solicitar viajes y brinda a los conductores una plataforma para gestionar su trabajo. Utilicé Tailwind CSS para un estilizado moderno y responsive, implementé GraphQL para optimizar la interacción entre la app y el backend, tambien se integro la API de Google Geolocation para funcionalidades de mapas y localización en tiempo real. El Backend fue desarrollado en NestJS, aplicando una arquitectura basada en microservicios para garantizar escalabilidad y comunicación en tiempo real."
   },
   "projects": {
     "title_project_1": "Blog General",
