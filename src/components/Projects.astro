@@ -12,6 +12,10 @@ import Tailwind from "./icons/Tailwind.astro";
 import React from "./icons/React.astro";
 import TypeScript from "./icons/TypeScript.astro";
 import { getI18n } from "../i18n";
+import GraphQL from "./icons/GraphQL.astro";
+import SQLite from "./icons/SQLite.astro";
+import Expo from "./icons/Expo.astro";
+import Cloudinary from "./icons/Cloudinary.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
@@ -57,14 +61,47 @@ const TAGS = {
     class: "bg-black text-white",
     icon: React,
   },
+  REACTNATIVE: {
+    name: "React Native",
+    class: "bg-black text-white",
+    icon: React,
+  },
   TYPESCRIPT: {
     name: "TypeScript",
     class: "bg-black text-white",
     icon: TypeScript,
   },
+  GRAPHQL: {
+    name: "GraphQL",
+    class: "bg-black text-white",
+    icon: GraphQL,
+  },
+  SQLITE: {
+    name: "SQLite",
+    class: "bg-black text-white",
+    icon: SQLite,
+  },
+  EXPO: {
+    name: "Expo",
+    class: "bg-black text-white",
+    icon: Expo,
+  },
+  CLOUDINARY: {
+    name: "Cloudinary",
+    class: "bg-black text-white",
+    icon: Cloudinary,
+  },
 };
 
 const PROJECTS = [
+  {
+    title: i18n.projects.title_project_5,
+    description: i18n.projects.description_project_5,
+    link: "https://github.com/jhosbel/kaos-expo-app",
+    github: "https://github.com/jhosbel/kaos-expo-app",
+    image: "/projects/kaos.webp",
+    tags: [TAGS.EXPO, TAGS.REACTNATIVE, TAGS.TYPESCRIPT, TAGS.NEST, TAGS.SQLITE, TAGS.GRAPHQL, TAGS.CLOUDINARY],
+  },
   {
     title: i18n.projects.title_project_4,
     description: i18n.projects.description_project_4,

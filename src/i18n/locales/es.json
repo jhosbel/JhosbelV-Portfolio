@@ -29,7 +29,9 @@
     "title_project_3": "Rick And Morthy Web",
     "description_project_3": "Pagina web sobre la serie famosa Rick and Morthy donde se muestra la información sobre los personajes de la serie consumiendo la api publica de Rick and Morthy.",
     "title_project_4": "C-Fitness",
-    "description_project_4": "C-Fitness es una aplicación donde los usuarios pueden crear listas de entrenamientos personalizados, buscando los ejercicios por sus tipos de músculos y agregándolos a su lista personalizada para luego poder agregarla a un calendario de manera que puedan seguir una rutina diaria o planificar en la semana la rutina que al usuario mejor le convenga."
+    "description_project_4": "C-Fitness es una aplicación donde los usuarios pueden crear listas de entrenamientos personalizados, buscando los ejercicios por sus tipos de músculos y agregándolos a su lista personalizada para luego poder agregarla a un calendario de manera que puedan seguir una rutina diaria o planificar en la semana la rutina que al usuario mejor le convenga.",
+    "title_project_5": "KAOS",
+    "description_project_5": "KAOS es una aplicación móvil desarrollada en React Native utilizando Expo, diseñada para crear y gestionar salas de juego para juegos móviles y de PC. La app permite a los usuarios participar en partidas competitivas, recargar su saldo (en créditos) y convertir esos créditos en dinero real. Además, los administradores pueden gestionar las salas, confirmar recargas, finalizar partidas y distribuir estadísticas. El objetivo principal de KAOS es proporcionar una plataforma donde los jugadores puedan competir, ganar créditos y retirar sus ganancias, mientras que los administradores gestionan eficientemente el ecosistema."
   },
   "about_me": {
     "paragraph_about_1": "Me llamo Jhosbel Vargas. Empecé la programación gracias a la recomendación de un amigo hace ya muchos años y desde entonces he estado involucrado en el mundo del desarrollo aprendiendo más sobre las nuevas tecnologías.",
