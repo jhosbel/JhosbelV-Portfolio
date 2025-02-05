@@ -57,5 +57,14 @@
     "button_know_more": "Saber más...",
     "button_see_code": "Ver codigo fuente",
     "button_go_web": "Ir al sitio web"
+  },
+  "tech": {
+    "tech_title": "Tecnologías y habilidades",
+    "tech_paragraph": "Me mantengo constantemente actualizado con las últimas tecnologías y actualizaciones.",
+    "tech_frontend": "Frontend",
+    "tech_backend": "Backend",
+    "tech_languages": "Lenguajes",
+    "tech_database": "Base de Datos",
+    "tech_mobile": "Móvil"
   }
 }

@@ -1,26 +1,157 @@
 ---
 import { getI18n } from "../i18n";
+import React from "./icons/React.astro";
+import TypeScript from "./icons/TypeScript.astro";
+import Html from "./icons/Html.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import NestJs from "./icons/NestJs.astro";
+import NodeJs from "./icons/NodeJs.astro";
+import TecnologyCard from "./TecnologyCard.astro";
+import NextJs from "./icons/NextJs.astro";
+import Css from "./icons/Css.astro";
+import MaterialUI from "./icons/MaterialUI.astro";
+import Express from "./icons/Express.astro";
+import TypeORM from "./icons/TypeORM.astro";
+import JavaScript from "./icons/JavaScript.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+import Cloudinary from "./icons/Cloudinary.astro";
+import MongoDB from "./icons/MongoDB.astro";
+import SQLite from "./icons/SQLite.astro";
+import PostgreSQL from "./icons/PostgreSQL.astro";
+import Firebase from "./icons/Firebase.astro";
+import Expo from "./icons/Expo.astro";
+import GraphQL from "./icons/GraphQL.astro";
+import Prisma from "./icons/Prisma.astro";
+import Redis from "./icons/Redis.astro";
+import Redux from "./icons/Redux.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
+
+const frontend = [
+  { name: "React", Icon: React },
+  { name: "Next.js", Icon: NextJs },
+  { name: "Astro", Icon: AstroIcon },
+  { name: "HTML5", Icon: Html },
+  { name: "CSS3", Icon: Css },
+  { name: "Tailwind CSS", Icon: Tailwind },
+  { name: "Material UI", Icon: MaterialUI },
+  { name: "Cloudinary", Icon: Cloudinary },
+  { name: "Redux", Icon: Redux },
+];
+const backend = [
+  { name: "Node.js", Icon: NodeJs },
+  { name: "Nest.js", Icon: NestJs },
+  { name: "Express", Icon: Express },
+  { name: "TypeORM", Icon: TypeORM },
+  { name: "GraphQL", Icon: GraphQL },
+  { name: "Prisma", Icon: Prisma },
+  { name: "Redis", Icon: Redis },
+];
+const languages = [
+  { name: "JavaScript", Icon: JavaScript },
+  { name: "TypeScript", Icon: TypeScript },
+];
+const database = [
+  { name: "MongoDB", Icon: MongoDB },
+  { name: "SQLite", Icon: SQLite },
+  { name: "PostgreSQL", Icon: PostgreSQL },
+  { name: "Firebase", Icon: Firebase },
+];
+const mobile = [
+  { name: "React Native", Icon: React },
+  { name: "Expo", Icon: Expo },
+];
 ---
 
-<section class="flex flex-col gap-8 md:flex-row justify-center items-center">
-  <div
-    class="[&>p]:mb-4 [&>p>strong]:text-yellow-400 [&>p>strong]:font-semibold order-2 md:order-1"
-  >
-    <p>
-      {i18n.about_me.paragraph_about_1}
-    </p>
+<section class="gap-8 md:flex-row justify-center items-center">
+  <div class="flex flex-col gap-8 md:flex-row justify-center items-center">
+    <div
+      class="[&>p]:mb-4 [&>p>strong]:text-yellow-400 [&>p>strong]:font-semibold order-2 md:order-1"
+    >
+      <p>
+        {i18n.about_me.paragraph_about_1}
+      </p>
 
-    <p>
-      {i18n.about_me.paragraph_about_2}<strong>{i18n.about_me.paragraph_about_3}</strong>
-      {i18n.about_me.paragraph_about_4}
-    </p>
+      <p>
+        {i18n.about_me.paragraph_about_2}<strong
+          >{i18n.about_me.paragraph_about_3}</strong
+        >
+        {i18n.about_me.paragraph_about_4}
+      </p>
+    </div>
+    <img
+      src="/image.webp"
+      alt="Foto mia en un ambiente laboral."
+      class="rounded-full size-64 order-1 md:order-2"
+    />
   </div>
-  <img
-    src="/image.webp"
-    alt="Foto mia en un ambiente laboral."
-    class="rounded-full size-64 order-1 md:order-2"
-  />
+  <div class="flex flex-col gap-2">
+    <h2 class="text-2xl font-bold text-center mt-6">
+      {i18n.tech.tech_title}
+    </h2>
+    <p class="text-center">
+      {i18n.tech.tech_paragraph}
+    </p>
+    <h2 class="text-center text-xl font-bold">{i18n.tech.tech_frontend}</h2>
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2"
+    >
+      {
+        frontend.map((tech) => (
+          <TecnologyCard name={tech.name}>
+            <tech.Icon class="w-8 h-8 text-white group-hover:[color:var(--hover-color)]" />
+          </TecnologyCard>
+        ))
+      }
+    </div>
+    <h2 class="text-center text-xl font-bold">{i18n.tech.tech_backend}</h2>
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2"
+    >
+      {
+        backend.map((tech) => (
+          <TecnologyCard name={tech.name}>
+            <tech.Icon class="w-8 h-8 text-white group-hover:[color:var(--hover-color)]" />
+          </TecnologyCard>
+        ))
+      }
+    </div>
+    <h2 class="text-center text-xl font-bold">{i18n.tech.tech_languages}</h2>
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2"
+    >
+      {
+        languages.map((tech) => (
+          <TecnologyCard name={tech.name}>
+            <tech.Icon class="w-8 h-8 text-white group-hover:[color:var(--hover-color)]" />
+          </TecnologyCard>
+        ))
+      }
+    </div>
+    <h2 class="text-center text-xl font-bold">{i18n.tech.tech_database}</h2>
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2"
+    >
+      {
+        database.map((tech) => (
+          <TecnologyCard name={tech.name}>
+            <tech.Icon class="w-8 h-8 text-white group-hover:[color:var(--hover-color)]" />
+          </TecnologyCard>
+        ))
+      }
+    </div>
+    <h2 class="text-center text-xl font-bold">{i18n.tech.tech_mobile}</h2>
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2"
+    >
+      {
+        mobile.map((tech) => (
+          <TecnologyCard name={tech.name}>
+            <tech.Icon class="w-8 h-8 text-white group-hover:[color:var(--hover-color)]" />
+          </TecnologyCard>
+        ))
+      }
+    </div>
+  </div>
 </section>
