@@ -16,6 +16,8 @@ import GraphQL from "./icons/GraphQL.astro";
 import SQLite from "./icons/SQLite.astro";
 import Expo from "./icons/Expo.astro";
 import Cloudinary from "./icons/Cloudinary.astro";
+import Swagger from "./icons/Swagger.astro";
+import PostgreSQL from "./icons/PostgreSQL.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
@@ -91,6 +93,16 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Cloudinary,
   },
+  SWAGGER: {
+    name: "Swagger",
+    class: "bg-black text-white",
+    icon: Swagger,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-black text-white",
+    icon: PostgreSQL,
+  },
 };
 
 const PROJECTS = [
@@ -108,7 +120,7 @@ const PROJECTS = [
     link: "https://fitness-web-app-lemon.vercel.app/",
     github: "https://github.com/jhosbel/FitnessWebApp",
     image: "/projects/c-fitness-portada.webp",
-    tags: [TAGS.TYPESCRIPT, TAGS.NEXT, TAGS.NEST, TAGS.MONGODB, TAGS.TAILWIND],
+    tags: [TAGS.TYPESCRIPT, TAGS.NEXT, TAGS.NEST, TAGS.POSTGRESQL, TAGS.TAILWIND, TAGS.SWAGGER],
   },
   {
     title: i18n.projects.title_project_1,
