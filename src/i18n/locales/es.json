@@ -29,9 +29,9 @@
     "title_project_3": "Rick And Morthy Web",
     "description_project_3": "Pagina web sobre la serie famosa Rick and Morthy donde se muestra la información sobre los personajes de la serie consumiendo la api publica de Rick and Morthy.",
     "title_project_4": "C-Fitness",
-    "description_project_4": "C-Fitness es una aplicación donde los usuarios pueden crear listas de entrenamientos personalizados, buscando los ejercicios por sus tipos de músculos y agregándolos a su lista personalizada para luego poder agregarla a un calendario de manera que puedan seguir una rutina diaria o planificar en la semana la rutina que al usuario mejor le convenga.",
+    "description_project_4": "C-Fitness es una aplicación que permite a los usuarios crear y planificar rutinas de entrenamiento personalizadas, seleccionando ejercicios por grupo muscular y organizándolos en un calendario para un entrenamiento estructurado.",
     "title_project_5": "KAOS",
-    "description_project_5": "KAOS es una aplicación móvil desarrollada en React Native utilizando Expo, diseñada para crear y gestionar salas de juego para juegos móviles y de PC. La app permite a los usuarios participar en partidas competitivas, recargar su saldo (en créditos) y convertir esos créditos en dinero real. Además, los administradores pueden gestionar las salas, confirmar recargas, finalizar partidas y distribuir estadísticas. El objetivo principal de KAOS es proporcionar una plataforma donde los jugadores puedan competir, ganar créditos y retirar sus ganancias, mientras que los administradores gestionan eficientemente el ecosistema."
+    "description_project_5": "App móvil en React Native con Expo que permite crear y gestionar salas de juego para móviles y PC. Los jugadores pueden competir, recargar saldo en créditos y convertirlos en dinero real, mientras que los administradores controlan partidas, recargas y estadísticas."
   },
   "about_me": {
     "paragraph_about_1": "Me llamo Jhosbel Vargas. Empecé la programación gracias a la recomendación de un amigo hace ya muchos años y desde entonces he estado involucrado en el mundo del desarrollo aprendiendo más sobre las nuevas tecnologías.",
@@ -40,7 +40,7 @@
     "paragraph_about_4": "luego de demostrar mis habilidades adquiridas a lo largo del tiempo. Estoy orgulloso del trabajo que realice y aunque no se pudo completar con la aplicación debido a agentes externos, puedo decir que fue una experiencia bastante enriquecedora."
   },
   "contact": {
-    "paragraph_contact_1": "Actualmente estoy abierto a nuevos proyectos y oportunidades de colaboración. Si tiene alguna empresa interesante o posible colaboración en mente, no dude en comunicarse con nosotros.",
+    "paragraph_contact_1": "Actualmente estoy abierto a nuevos proyectos y oportunidades de colaboración. Si tiene alguna empresa interesante o posible colaboración en mente, no dude en comunicarse conmigo.",
     "title_contact_label_1": "Tu Nombre",
     "placeholder_contact_label_1": "Ingrese su nombre",
     "title_contact_label_2": "Tu Correo",
